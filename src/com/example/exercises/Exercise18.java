@@ -22,7 +22,7 @@ public class Exercise18 {
         var maxMovieCountByYear = 
           movies.stream();
 
-        maxMovieCountByYear.ifPresent(System.out::println);
+//        maxMovieCountByYear.ifPresent(System.out::println);
 	}
 
 }

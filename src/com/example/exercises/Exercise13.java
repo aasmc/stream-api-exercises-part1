@@ -20,8 +20,8 @@ public class Exercise13 {
 
 	public static void main(String[] args) {
 		// Find the countries with the minimum and the maximum population
-		var countrySummaryStatistics;
-		System.out.println(countrySummaryStatistics);
+//		var countrySummaryStatistics;
+//		System.out.println(countrySummaryStatistics);
 	}
 
 }

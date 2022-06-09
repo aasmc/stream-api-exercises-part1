@@ -30,9 +30,9 @@ public class Exercise14 {
 
 	public static void main(String[] args) {
 		// Find the countries of each continent with the minimum and the maximum population
-		var continentStatistics;
-
-		continentStatistics.forEach(printEntry);
+//		var continentStatistics;
+//
+//		continentStatistics.forEach(printEntry);
 	}
 
 }

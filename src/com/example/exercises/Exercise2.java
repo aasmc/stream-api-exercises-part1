@@ -16,9 +16,9 @@ public class Exercise2 {
 
 	public static void main(String[] args) {
 		// Find the most populated city of each continent
-		var highPopulatedCityOfEachContinent;
-
-		highPopulatedCityOfEachContinent.forEach(ContinentCityPair::printEntry);
+//		var highPopulatedCityOfEachContinent;
+//
+//		highPopulatedCityOfEachContinent.forEach(ContinentCityPair::printEntry);
 	}
 
 }

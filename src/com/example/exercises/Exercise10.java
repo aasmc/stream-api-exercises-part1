@@ -21,9 +21,9 @@ public class Exercise10 {
 	private static final BiConsumer<String,Optional<Country>> printEntry = (continent,country) -> System.out.printf("%s: %s\n",continent,country.get());		
 	public static void main(String[] args) {
 		// Find the richest country of each continent with respect to their GNP (Gross National Product) values.
-        var richestCountryByContinent;
-
-        richestCountryByContinent.forEach(printEntry);
+//        var richestCountryByContinent;
+//
+//        richestCountryByContinent.forEach(printEntry);
 	}
 
 }

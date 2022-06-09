@@ -22,9 +22,9 @@ public class Exercise5 {
 	public static void main(String[] args) {
 		// Find the highest populated capital city of each continent
 		Function<ContinentCityPair, City> extractCity = ContinentCityPair::city;
-		var highPopulatedCapitalCityOfEachContinent;
-
-		highPopulatedCapitalCityOfEachContinent.forEach((continent,pair) -> System.out.printf("%s: %s\n",continent,pair.get().city()));	
+//		var highPopulatedCapitalCityOfEachContinent;
+//
+//		highPopulatedCapitalCityOfEachContinent.forEach((continent,pair) -> System.out.printf("%s: %s\n",continent,pair.get().city()));
 	}
 
 }
