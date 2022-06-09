@@ -26,10 +26,7 @@ public class Exercise16 {
 
 	public static void main(String[] args) {
 		// Find the cities with the minimum and the maximum population in countries.
-		var countryCityStatistics = 
-		worldDao.findAllCountries()
-				.stream()
-				.collect(groupingBy(Country::getCode, of(CountryCitySummaryStatistics::new, accumulator, combiner)));
+		var countryCityStatistics;
 		countryCityStatistics.forEach(printEntry);
 	}
 }

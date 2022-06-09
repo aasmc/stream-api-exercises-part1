@@ -20,14 +20,8 @@ public class Exercise4 {
 
 	public static void main(String[] args) {
 		// Find the highest populated capital city
-		var highPopulatedCapitalCity = 
-				countryDao.findAllCountries()
-				          .stream()
-				          .map(Country::getCapital)
-				          .filter(Objects::nonNull)
-				          .map(cityDao::findCityById)
-				          .filter(Objects::nonNull)
-				          .max(Comparator.comparing(City::getPopulation));
+		var highPopulatedCapitalCity;
+
 		highPopulatedCapitalCity.ifPresent(System.out::println);		          
 	}
 

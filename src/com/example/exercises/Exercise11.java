@@ -16,10 +16,7 @@ public class Exercise11 {
 
 	public static void main(String[] args) {
 		// Find the minimum, the maximum and the average population of world countries
-		var populationSummary = 
-		worldDao.findAllCountries()
-		        .stream()
-				.collect(summarizingLong(Country::getPopulation));
+		var populationSummary;
 		System.out.println(populationSummary);
 	}
 

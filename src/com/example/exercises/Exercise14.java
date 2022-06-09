@@ -30,10 +30,8 @@ public class Exercise14 {
 
 	public static void main(String[] args) {
 		// Find the countries of each continent with the minimum and the maximum population
-		var continentStatistics = 
-				worldDao.findAllCountries()
-				        .stream()
-				        .collect(groupingBy(Country::getContinent, of(countrySummaryStatisticsSupplier, accumulator, combiner)));
+		var continentStatistics;
+
 		continentStatistics.forEach(printEntry);
 	}
 

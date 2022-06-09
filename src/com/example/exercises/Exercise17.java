@@ -16,14 +16,8 @@ public class Exercise17 {
 	public static void main(String[] args) {
 		// Find the minimum, the maximum, the average, and the standard deviation of GNP values.
         var gnpStatistics =
-           worldDao.findAllCountries()
-                   .stream()
-                   .mapToDouble(Country::getGnp)
-                   .collect(
-                           DoubleSummaryGaussianStatistics::new,
-                           DoubleSummaryGaussianStatistics::accept,
-                           DoubleSummaryGaussianStatistics::combine
-                   );
+           worldDao.findAllCountries();
+
         System.out.println(gnpStatistics);
 	}
 
