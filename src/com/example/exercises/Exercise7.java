@@ -16,9 +16,9 @@ public class Exercise7 {
 	public static void main(String[] args) {
 		// Find the list of movies having the genres "Drama" and "Comedy" only
 		var listOfGenreNames = List.of("Drama", "Comedy");
-		var listOfGenres = listOfGenreNames.stream().map(movieService::findGenreByName).toList();
-		var moviesInDramaAndComedyOnly;
-		moviesInDramaAndComedyOnly.forEach(movie -> System.out.printf("%s %s\n",movie,movie.getGenres()));
+//		var listOfGenres = listOfGenreNames.stream().map(movieService::findGenreByName).toList();
+//		var moviesInDramaAndComedyOnly;
+//		moviesInDramaAndComedyOnly.forEach(movie -> System.out.printf("%s %s\n",movie,movie.getGenres()));
 	}
 
 }

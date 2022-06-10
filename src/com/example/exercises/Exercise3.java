@@ -16,12 +16,12 @@ public class Exercise3 {
 
 	public static void main(String[] args) {
 		// Find the number of genres of each director's movies
-		var directorGenreNumbers;
-
-		directorGenreNumbers.forEach((director,genreCounts)->{
-			System.out.printf("%s\n",director.getName());
-			genreCounts.forEach( (genre,count) -> System.out.printf("\t%s: %s\n",genre.getName(),count));
-		});
+//		var directorGenreNumbers;
+//
+//		directorGenreNumbers.forEach((director,genreCounts)->{
+//			System.out.printf("%s\n",director.getName());
+//			genreCounts.forEach( (genre,count) -> System.out.printf("\t%s: %s\n",genre.getName(),count));
+//		});
 		
 	}
 

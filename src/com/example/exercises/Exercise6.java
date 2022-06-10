@@ -17,9 +17,9 @@ public class Exercise6 {
 	public static void main(String[] args) {
 		// Sort the countries by number of their cities in descending order
 		Function<CountryCityCountPair, Integer> countExtracter = CountryCityCountPair::count;
-		var countriesWithCityCountInDescOrder;
-
-		countriesWithCityCountInDescOrder.forEach(System.out::println);
+//		var countriesWithCityCountInDescOrder;
+//
+//		countriesWithCityCountInDescOrder.forEach(System.out::println);
 	}
 
 }

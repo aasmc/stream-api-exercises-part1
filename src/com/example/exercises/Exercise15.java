@@ -30,8 +30,8 @@ public class Exercise15 {
 
 	public static void main(String[] args) {
 		// Group the countries by continent, and then sort the countries in each continent by number of cities in each country.
-		var countriesByContinent;
-		countriesByContinent.forEach(printEntry);
+//		var countriesByContinent;
+//		countriesByContinent.forEach(printEntry);
 	}
 
 }

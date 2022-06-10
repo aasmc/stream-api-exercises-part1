@@ -20,9 +20,9 @@ public class Exercise4 {
 
 	public static void main(String[] args) {
 		// Find the highest populated capital city
-		var highPopulatedCapitalCity;
-
-		highPopulatedCapitalCity.ifPresent(System.out::println);		          
+//		var highPopulatedCapitalCity;
+//
+//		highPopulatedCapitalCity.ifPresent(System.out::println);
 	}
 
 }

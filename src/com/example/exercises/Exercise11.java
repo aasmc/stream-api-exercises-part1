@@ -16,8 +16,8 @@ public class Exercise11 {
 
 	public static void main(String[] args) {
 		// Find the minimum, the maximum and the average population of world countries
-		var populationSummary;
-		System.out.println(populationSummary);
+//		var populationSummary;
+//		System.out.println(populationSummary);
 	}
 
 }

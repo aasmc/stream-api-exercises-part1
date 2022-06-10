@@ -26,7 +26,7 @@ public class Exercise16 {
 
 	public static void main(String[] args) {
 		// Find the cities with the minimum and the maximum population in countries.
-		var countryCityStatistics;
-		countryCityStatistics.forEach(printEntry);
+//		var countryCityStatistics;
+//		countryCityStatistics.forEach(printEntry);
 	}
 }
