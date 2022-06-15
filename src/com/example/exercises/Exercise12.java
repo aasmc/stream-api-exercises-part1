@@ -5,25 +5,26 @@ import static java.util.stream.Collectors.summarizingLong;
 
 import java.util.LongSummaryStatistics;
 import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
 
 import com.example.dao.InMemoryWorldDao;
 import com.example.dao.WorldDao;
 import com.example.domain.Country;
 
 /**
- * 
  * @author Binnur Kurt <binnur.kurt@gmail.com>
- *
  */
 public class Exercise12 {
-	private static final WorldDao worldDao = InMemoryWorldDao.getInstance();
+    private static final WorldDao worldDao = InMemoryWorldDao.getInstance();
 
-	private static final BiConsumer<String, LongSummaryStatistics> printEntry = (continent, statistics) -> System.out.printf("%s: %s\n", continent, statistics);
+    private static final BiConsumer<String, LongSummaryStatistics> printEntry = (continent, statistics) -> System.out.printf("%s: %s\n", continent, statistics);
 
-	public static void main(String[] args) {
-		// Find the minimum, the maximum and the average population of each continent.
-//		var populationSummaryByContinent;
-//		populationSummaryByContinent.forEach(printEntry);
-	}
+    public static void main(String[] args) {
+        // Find the minimum, the maximum and the average population of each continent.
+        var populationSummaryByContinent = worldDao.findAllCountries()
+                .stream()
+                .collect(Collectors.groupingBy(Country::getContinent, Collectors.summarizingLong(Country::getPopulation)));
+        populationSummaryByContinent.forEach(printEntry);
+    }
 
 }
